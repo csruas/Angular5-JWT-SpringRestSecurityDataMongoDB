@@ -1,6 +1,30 @@
 <h1>
   {{ title }}
 </h1>
-
+<br>
 
 <app-task-list></app-task-list>
+
+<!-- Usando Pipes em formato JSON -->
+<br>
+{{ user | json }}
+
+<!-- Letras maiuscula  -->
+<br>
+{{ upperText | uppercase}}
+
+<!-- Letras minuscula -->
+<br>
+{{ lowerText | lowercase}}
+
+<!-- mostra a porcentagem  -->
+<br>
+{{ percentValue | percent}}
+
+<!-- mostra a Data formatada -->
+<br>
+{{ date | date : 'yyyy/MM/dd'}}
+
+<!-- mostra a moeda Formatada -->
+<br>
+{{ money | currency}}
